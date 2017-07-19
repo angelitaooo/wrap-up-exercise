@@ -3,12 +3,10 @@ VAT: {{vat}}
 <input type="number" [(ngModel)]="value" placeholder="VALUE">
 <input type="text" [(ngModel)]="article" placeholder="ARTICLE">
 
-<button
-    type="button"
-    (click)="calculateVat()"
->
-  Submit
-</button>
+<app-primary-button
+    (clickEvent)="calculateVat()"
+    [value]="'Calculate VAT at ' + vat + '%'">
+</app-primary-button>
 
 <strong>Result: {{result}}</strong>
 
