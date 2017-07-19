@@ -23,8 +23,7 @@ export class VatComponent implements OnInit {
   }
 
   calculateVat() {
-    const valueAsNumber = +this.value;
-    this.result = this.vatService.getVatForArticle(valueAsNumber, this.vat);
+    this.result = this.vatService.getVatForArticle(this.value, this.vat);
   }
 
 }
