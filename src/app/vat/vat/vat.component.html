@@ -8,7 +8,10 @@ VAT: {{vat}}
     [value]="'Calculate VAT at ' + vat + '%'">
 </app-primary-button>
 
-<strong>Result: {{result}}</strong>
+<strong>
+  The {{article}} costs
+  {{result | currency:'USD':true:'1.0'}}
+</strong>
 
 <br>
 <br>
