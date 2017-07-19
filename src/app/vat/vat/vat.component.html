@@ -1,0 +1,20 @@
+VAT: {{vat}}
+
+<input type="text" [(ngModel)]="value" placeholder="VALUE">
+<input type="text" [(ngModel)]='article' placeholder="ARTICLE">
+
+<button
+    type="button"
+    (click)="calculateVat()"
+>
+  Submit
+</button>
+
+<strong>Result: {{result}}</strong>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
