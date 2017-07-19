@@ -14,6 +14,7 @@ export class VatComponent implements OnInit {
   article;
   value = 0;
   result = 0;
+  vatResult = 0;
 
   constructor(
     private vatService: VatService
@@ -24,6 +25,7 @@ export class VatComponent implements OnInit {
 
   calculateVat() {
     this.result = this.vatService.getVatForArticle(this.value, this.vat);
+    this.vatResult = this.vatService.getVat(this.value, this.vat);
   }
 
 }

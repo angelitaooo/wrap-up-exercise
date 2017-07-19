@@ -9,8 +9,9 @@ VAT: {{vat}}
 </app-primary-button>
 
 <strong>
-  The {{article}} costs
-  {{result | currency:'USD':true:'1.0'}}
+  <p>The {{article}} costs {{value}}</p>
+  <p>The VAT is {{ vatResult }}</p>
+  <p>Te total is: {{result | currency:'USD':true:'1.0'}}</p>
 </strong>
 
 <br>
